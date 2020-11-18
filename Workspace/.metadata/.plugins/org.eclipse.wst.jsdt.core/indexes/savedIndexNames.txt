@@ -1,0 +1,7 @@
+INDEX VERSION 1.4+D:\TalentSprint\Workspace\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+1887217176.index
+3994064571.index
+2433073092.index
+363680150.index
+1468038187.index
+3017168598.index

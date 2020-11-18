@@ -1,0 +1,24 @@
+package problemSolving;
+
+public class FourDigitEvenPerfectNumber {
+	public static void main(String[] args ) {
+		perfectSquares(9898);
+		
+	}
+	public static void  perfectSquares( int end ) {
+		for(int i = 0 ; i <= end ; ) {
+			int square = i * i ;
+			while((square ) > 999 && (square)< 10000) {
+				if(square % 2 != 0 ) {
+				System.out.println(square);
+				i++;
+				}
+				else {
+					i++ ;
+				}
+			}
+			
+		}
+	}
+}
+

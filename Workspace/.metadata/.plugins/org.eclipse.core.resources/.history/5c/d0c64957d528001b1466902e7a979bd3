@@ -1,0 +1,14 @@
+package cabCompany;
+
+public class CabCustomerServiceTester {
+	public static void main(String [] args) {
+		
+		CabCustomer c1 = new CabCustomer(1 , "Sid" , "Banjara hills " , "Jubilee Hills " , 4 , 9949032944l );
+		CabCustomer c1 = new CabCustomer(1 , "Sid" , "Banjara hills " , "Jubilee Hills " , 4 , 9949032944l );
+		CabCustomer c1 = new CabCustomer(1 , "Sid" , "Banjara hills " , "Jubilee Hills " , 4 , 9949032944l );
+		
+		System.out.println(c1);
+		
+	}
+
+}

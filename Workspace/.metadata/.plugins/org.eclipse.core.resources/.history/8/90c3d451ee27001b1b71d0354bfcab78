@@ -1,0 +1,34 @@
+package problemSolving;
+
+public class FourDigitEvenPerfectNumber {
+	public static void main(String[] args ) {
+		
+	}
+	public int[] evenCheck(int [] array) {
+		int []evenPerfects = new int[array.length];
+		for(int i = 0 ; i < array.length ; i++) {
+			while(array[i] % 2 == 0) {
+				evenPerfects[i] = array[i] ; 
+			}
+		}
+		return evenPerfects;
+		
+	}
+	
+	public int[] perfectSquares(int initial , int end) {
+		int len = end - initial ;
+		int [] perfectSq = new int[len];
+		int index = 0;
+		for(int i = initial ; i <= end ; i++) {
+			
+			if((int)Math.sqrt(i) == Math.sqrt(i)) {
+				perfectSq[index] = i ;
+				index ++ ;
+			}
+			
+			
+		}
+		return perfect;
+	}
+
+}

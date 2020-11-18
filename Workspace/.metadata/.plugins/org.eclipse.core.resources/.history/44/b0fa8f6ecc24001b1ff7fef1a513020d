@@ -1,0 +1,28 @@
+package interfaces;
+
+import java.util.Scanner;
+
+public class CalculateBillAmount {
+	public static void main(String[] args) {
+		WBill water = new WBill();
+		EBill electricity = new EBill();
+		
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("enter no_of_units ");
+		int no_of_units = scan.nextInt();
+		
+		System.out.println("enter cost_per_unit ");
+		double cost_per_unit = scan.nextDouble();
+		
+		water.calcBill(no_of_units, cost_per_unit) ;
+		electricity.calcBill(no_of_units, cost_per_unit);
+		
+		water.displayBill();
+		electricity.displayBill();
+		
+		
+	}
+	
+
+}

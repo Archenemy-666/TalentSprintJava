@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Assignments.iml" filepath="$PROJECT_DIR$/Assignments.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Inheritence/Inheritence.iml" filepath="$PROJECT_DIR$/Inheritence/Inheritence.iml" />
+      <module fileurl="file://$PROJECT_DIR$/abstractAndInherit/abstractAndInherit.iml" filepath="$PROJECT_DIR$/abstractAndInherit/abstractAndInherit.iml" />
+    </modules>
+  </component>
+</project>

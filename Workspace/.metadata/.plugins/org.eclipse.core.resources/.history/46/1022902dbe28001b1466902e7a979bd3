@@ -1,0 +1,9 @@
+package Collections;
+
+public class MovieInfo {
+	public static void main(String[] args) {
+		Movie m1 = new Movie("bigboybuttons", 1.50f, 9.0f);
+		
+	}
+
+}
