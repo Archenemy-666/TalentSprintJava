@@ -1,10 +1,11 @@
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.Map;
 import java.util.TreeMap;
 
 public class HospitalService {
     private ArrayList<Hospital> hospitalArray = new ArrayList<Hospital>();
-    private TreeMap<Integer, String> hospitalMap = new TreeMap<Integer, String>();
+    private HashMap<Integer, String> hospitalMap = new HashMap<Integer, String>();
 
     public int addHospital(Hospital c) {
 
@@ -17,7 +18,11 @@ public class HospitalService {
         for (Hospital h : hospitalArray) {
             hospitalMap.put(h.getHospitalCode(), h.getHospitalName());
         }
-        return hospitalMap;
+        // creating a treemap that sorts according to value ;
+        TreeMap<Integer,String> hospitalTreeMap = new TreeMap<Integer, String>(new MapComparator1(hospitalMap));
+        hospitalTreeMap.putAll(hospitalMap);
+        return hospitalTreeMap;
+
 
     }
 
