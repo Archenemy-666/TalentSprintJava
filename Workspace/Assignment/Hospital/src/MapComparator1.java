@@ -12,6 +12,11 @@ public class MapComparator1 implements Comparator<Integer>{
 
     @Override
     public int compare(Integer o1, Integer o2) {
-        return hm.get(o1).compareTo(hm.get(o2));
+        String value1 = hm.get(o1);
+        String value2 = hm.get(o2);
+        if(value1.compareToIgnoreCase(value2) <  1)
+            return -1;
+        return 1;
+
     }
 }
