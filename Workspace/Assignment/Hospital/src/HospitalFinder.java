@@ -21,7 +21,7 @@ public class HospitalFinder {
         System.out.println(hs1.addHospital(h2));
 
         System.out.println(hs1.getHospitals());
-        System.out.println(hs1.getHospitalDetails(1001));
+        System.out.println(hs1.getHospitalDetails(1000));
 
 
 

@@ -26,10 +26,7 @@ public class HospitalService {
         for (Hospital h : hospitalArray) {
             if (h.getHospitalCode() == hospitalCode) {
                 temp =  h;
-            } else {
-                temp = null ;
             }
-
         }
         return temp ;
     }
