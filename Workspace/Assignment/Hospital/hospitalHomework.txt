@@ -1,0 +1,45 @@
+package maps;
+
+import java.util.*;
+import java.util.Map.Entry;
+
+public class Occurrencces {
+	public static void main(String[] args) {
+
+		/*
+		 * arr_element map key(arr_element) value(count) 1 1 2 1 2 2 2 3 3 1 4 4 1 5 5 1
+		 * 6 6 3 6 7 7 1
+		 */
+		int array[] = { 1, 1, 2, 3, 4, 5, 6, 6, 2, 6, 7 };
+		TreeMap<Integer,Integer> map = occurences(array);
+
+		System.out.println("Element   Occurence");
+		for (Entry<Integer, Integer> e : map.entrySet()) {
+			System.out.println(e.getKey() + " " + e.getValue());
+		}
+
+	}
+
+	private static TreeMap<Integer, Integer> occurences(int[] array) {
+
+		TreeMap<Integer, Integer> map = new TreeMap<Integer, Integer>();
+		for (Integer arr_element : array) {
+			// System.out.println(arr_element);
+			if (map.containsKey(arr_element)) { // t
+				Integer value = map.get(arr_element); // 2
+				value++; // 3
+				map.put(arr_element, value);
+
+			} else {
+				map.put(arr_element, 1);
+			}
+
+		}
+
+		Map<Integer, Integer> map1 = new TreeMap<Integer, Integer>();
+
+		return map;
+
+	}
+
+}
